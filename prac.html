@@ -1,0 +1,51 @@
+<html>
+<head><title> Practice program html 1 </title>
+    <style>  
+          div{height:300px;width: 50%;background-color: whitesmoke;border-radius:25px;}
+          
+          input:not(focus){background: url("symbol.png");background-repeat: no-repeat;background-position: right;}
+          input:focus{background:none;} 
+          input:valid{background: url("valid.png");background-repeat: no-repeat;background-position: right;}
+          input:focus:invalid{background: url("invalid.png");background-repeat: no-repeat;background-position: right;}
+      h1 {color:white; text-align:center; background-color:red; border-radius:12px; margin:4px​ ​0}
+       input{width: 200px;height: 25px;}
+       input[type=submit] {width:100px;height:25px; color:white; text-align:center; background:none; background-color:#BF0000; font-family:arial; margin:4px​ ​0; padding:1px​ ​40px} 
+    </style></head>
+<body>
+    <form  name="myform" action="methods.php" method="post" onsubmit="superjavas()">
+    <center> <div>
+<h1>HTML AND CSS FORM</h1>
+<input type="text" placeholder="Username" name="usern" pattern = "[A-Za-z].{6,}" required></br></br>
+<input type="email" placeholder="Email" name = "email" pattern = ".{6,}" required></br></br>
+<input type="password" placeholder="Password" name = "password" pattern = "(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{8,}" required></br></br>
+<input type="text" placeholder="Mobile Number" name = "mbno" required></br></br>
+<input type="url" name = "url" placeholder="Web address" pattern = "https?://.+" required></br></br>
+<input  type = "submit" value = "Sign In"></div> </center>
+
+
+
+</form>
+
+<script>
+function superjavas() {
+user = document.myform.usern.value;
+email= document.myform.email.value;
+pass=document.myform.password.value;
+mob=document.myform.mbno.value;
+addr = document.myform.url.value;
+if(user.length<8||user.length>10){
+window.alert('kisko bhakwa banauchi');
+return false;
+}
+if(pass.length<3){
+alert('please enter a valid password');
+return false;
+}
+if​ ​(mob.length!=10){ alert("Mobile​ ​number​ ​should​ ​be​ ​10​ ​digits"); return​ ​false; } 
+}
+</script>
+
+
+
+</body>
+</html>

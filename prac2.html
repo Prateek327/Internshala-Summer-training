@@ -1,0 +1,32 @@
+html>
+<head><title>Practice session</title>
+    <style>
+        ​​ ​​ ​​ ​​ ​​ ​​ ​body{ ​ ​​ ​​ ​​ ​​ ​​ ​margin:​ ​0; ​ ​​ ​​ ​​ ​​ ​​ ​padding:​ ​0; ​ ​​ ​​ ​​ ​} ​ ​​ ​​ ​​ ​.container{ ​ ​​ ​​ ​​ ​​ ​​ ​font-family:​ ​'Roboto',​ ​sans-serif; ​ ​​ ​​ ​​ ​​ ​​ ​width:50vw; ​ ​​ ​​ ​​ ​​ ​​ ​margin:​ ​15vh; ​ ​​ ​​ ​​ ​​ ​​ ​border-radius:​ ​5%; ​ ​​ ​​ ​​ ​​ ​​ ​border:​ ​2px​ ​solid​ ​darkgreen; ​ ​​ ​​ ​​ ​​ ​​ ​background-color:​ ​skyblue; ​ ​​ ​​ ​​ ​} ​ ​​ ​​ ​​ ​input,​ ​select{ ​ ​​ ​​ ​​ ​​ ​​ ​display:​ ​inline-block; ​ ​​ ​​ ​​ ​​ ​​ ​width:​ ​44vh; ​ ​​ ​​ ​​ ​​ ​​ ​margin:​ ​12px; ​ ​​ ​​ ​​ ​​ ​​ ​border:​ ​2px​ ​solid​ ​darkgreen; ​ ​​ ​​ ​​ ​​ ​​ ​padding-left:​ ​1px; ​ ​​ ​​ ​​ ​} 
+ ​ ​​ ​​ ​​ ​input:active{ ​ ​​ ​​ ​​ ​​ ​​ ​border-style:​ ​solid; ​ ​​ ​​ ​​ ​​ ​​ ​border-radius:​ ​2px; ​ ​​ ​​ ​​ ​​ ​​ ​border-color:​ ​black; ​ ​​ ​​ ​​ ​} 
+ ​ ​​ ​​ ​​ ​label{ ​ ​​ ​​ ​​ ​​ ​​ ​display:​ ​inline-block; ​ ​​ ​​ ​​ ​​ ​​ ​width:​ ​43vh; ​ ​​ ​​ ​​ ​​ ​​ ​text-align:​ ​right; ​ ​​ ​​ ​​ ​​ ​​ ​padding:​ ​5px​ ​0; 
+​ ​​ ​​ ​​ ​​ ​​ ​border:​ ​2px​ ​solid​ ​darkgreen; ​ ​​ ​​ ​​ ​​ ​​ ​padding:​ ​5px; ​ ​​ ​​ ​​ ​} ​ ​​ ​​ ​​ ​textarea{ ​ ​​ ​​ ​​ ​​ ​​ ​display:​ ​inline-block; ​ ​​ ​​ ​​ ​​ ​​ ​width:​ ​45vw; ​ ​​ ​​ ​​ ​​ ​​ ​height:​ ​10vh; ​ ​​ ​​ ​​ ​​ ​​ ​border:​ ​2px​ ​solid​ ​darkgreen; ​ ​​ ​​ ​​ ​​ ​​ ​margin-bottom:​ ​1vh; ​ ​​ ​​ ​​ ​} 
+ ​ ​​ ​​ ​​ ​button{ ​ ​​ ​​ ​​ ​​ ​​ ​margin-bottom:​ ​1vh; ​ ​​ ​​ ​​ ​​ ​​ ​border:​ ​1px​ ​solid​ ​black; ​ ​​ ​​ ​​ ​​ ​​ ​border-radius:​ ​5px; ​ ​​ ​​ ​​ ​​ ​​ ​background-color:​ ​black; ​ ​​ ​​ ​​ ​​ ​​ ​color:​ ​white; ​ ​​ ​​ ​​ ​​ ​​ ​text-align:​ ​center; ​ ​​ ​​ ​​ ​​ ​​ ​text-decoration:​ ​none; ​ ​​ ​​ ​​ ​​ ​​ ​width:​ ​25vw; ​ ​​ ​​ ​​ ​​ ​​ ​height:​ ​4vh; ​ ​​ ​​ ​​ ​} 
+ ​ ​​ ​​ ​​ ​button:hover{ ​ ​​ ​​ ​​ ​​ ​​ ​background-color:​ ​grey; ​ ​​ ​​ ​​ ​​ ​​ ​color:​ ​white; ​ ​​ ​​ ​​ ​​ ​​ ​transition:​ ​all​ ​700ms​ ​ease; 
+ ​ ​​ ​​ ​​ ​}
+		</style></head>
+<body>
+<form><center><div class="container">
+<legend><h1> Course Information </h1></legend>
+<label for="usname">Name</label>  <input type="text" name = "usname" pattern = "[A-Za-z].{1,}"></br></br>
+<label for="email">E-mail</label> <input type="email" name = "email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"></br></br>
+<label for="gender">Gender</label> <select name="gender">
+                <option name= "gender" >Male</option>
+				<option name="gender">Female</option>
+				</select></br></br>
+<label for="dob">Date of Birth </label><input type="dob" name="dob" ></br></br>
+<label for="cc">Course Code</label> <input type="text" name="ccode" pattern="[A-Za-z].{1,}"></br></br>
+<label for="ss">Slot</label> <select name="slot">
+                <option name="slot" >L23+L24</option>
+				<option name="slot" >L45+L46</option>
+				</select></br></br>
+<label for="mno">Mobile Number</label> <input type="number" name="mbno" pattern="[0-9]"></br></br>
+<textarea rows="5" cols="30">remarks</textarea></br></br>
+<input type="submit" value="submit"></div></center>
+</form>
+</body>
+</html>
